@@ -24,12 +24,11 @@ const SidebarComponent = ({
         onClick={() => setActive((prev) => !prev)}>
         <div className="flex items-center">
           {/* Icons */}
-          <img className="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px]" src={image} />
-          <p
-            className="text-sm font-sans text-white ml-2"
-            >
-            {text}
-          </p>
+          <img
+            className="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px]"
+            src={image}
+          />
+          <p className="text-sm font-sans text-white ml-2">{text}</p>
           {/* Text */}
         </div>
 
@@ -44,7 +43,7 @@ const SidebarComponent = ({
         <div className="ml-6">
           {data?.map((data) => (
             <div>
-              <li className="text-sm font-sans text-white cursor-pointer hover:bg-yellow-500 hover:text-green-500 py-2 rounded-lg px-4 ">
+              <li className="text-sm font-sans text-white cursor-pointer hover:bg-yellow-500 hover:text-[#0C0F5C] py-2 rounded-lg px-4 ">
                 {data}
               </li>
             </div>

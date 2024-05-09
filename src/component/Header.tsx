@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     <div className="flex justify-between bg-white items-center flex-1 px-4 border-b border-gray-200 py-4">
       {/*  */}
       <div className="flex flex-full w-7/12 bg-gray-200 rounded-md py-4 px-2">
-        <img style={{ width: 20, height: 20 }} className="mr-5" src={search} />
+        <img  className="mr-5 w-[20px] h-[20px]" src={search} />
         <input
           placeholder="Search"
           className="text-md text-gray-300 bg-transparent border-none focus:border-none w-full outline-none"

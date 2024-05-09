@@ -44,10 +44,11 @@ const items2: MenuProps["items"] = [
 
 const SideDrawer: React.FC = () => {
   return (
-    <div
-      className="hidden sm:flex max-w-1/4 py-2  flex-col flex-grow px-8 max-h-full "
-      style={{ backgroundColor: "#0B0E54" }}>
-      <img src={logo} className="my-6 w-[120px] h-[25px]  sm:w-[220px] sm:h-[42px] " />
+    <div className="hidden sm:flex max-w-1/4 py-2 bg-[#0B0E54]  flex-col flex-grow px-8 max-h-full ">
+      <img
+        src={logo}
+        className="my-6 w-[120px] h-[25px]  sm:w-[220px] sm:h-[42px] "
+      />
       <div className="flex flex-col">
         {sideDrawerData.slice(0, 8).map((data: any) => (
           <SidebarComponent
@@ -58,7 +59,10 @@ const SideDrawer: React.FC = () => {
           />
         ))}
         <div>
-          <p className="text-gray-500 font-sans">INTERNAL TOOLS</p>
+          <p
+            className="text-gray-600 font-sans font-thin text-md">
+            INTERNAL TOOLS
+          </p>
           {sideDrawerData.slice(8, sideDrawerData.length).map((data: any) => (
             <SidebarComponent
               arrowRight={data.arrowRight}

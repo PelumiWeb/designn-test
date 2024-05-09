@@ -7,16 +7,23 @@ import LogoutButton from "../assets/Button.png";
 
 const ProfileComponent = () => {
   return (
-    <div className="flex  w-100 justify-between items-center py-3 mt-4 border-t-gray-300 border-t">
+    <div className="flex  w-100 justify-between items-center py-3 mt-4 border-t-gray-600 border-t">
       <div className="flex">
-        <img style={{ width: 48, height: 48 }} className="mr-2" src={Avatar} />
+        <img className="w-[48px] h-[48px] mr-2" src={Avatar} />
         <div>
-          <p className="text-white font-bold font-sans">olivia Rhye</p>
-          <p className="text-white font-semibold font-sans">olivia@</p>
+          <p className="text-white font-semibold text-sm md:text-md font-sans">
+            olivia Rhye
+          </p>
+          <p className="text-white font-thin text-sm md:text-md  font-sans">
+            olivia@untitledui.com
+          </p>
         </div>
       </div>
 
-      <img style={{ height: 48, width: 48 }} src={LogoutButton} />
+      <img
+        className="w-[34px] h-[34px] lg:w-[48px] lg:h-[48px]"
+        src={LogoutButton}
+      />
     </div>
   );
 };
