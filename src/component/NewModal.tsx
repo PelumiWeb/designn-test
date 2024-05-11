@@ -75,7 +75,7 @@ export default function BasicModal({open, handleClose, handleOpen}: any) {
                 </div>
               </div>
               <div>
-                <img className="h-[350px] md:h-full" src={illustration} />
+                <img className="h-[350px]" src={illustration} />
               </div>
               <div>
                 <div className="flex py-4 mt-10 items-center w-full justify-end pr-4">
