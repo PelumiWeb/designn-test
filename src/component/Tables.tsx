@@ -45,7 +45,7 @@ const columns: TableColumnsType<DataType> = [
         } border border-[#067647] bg-[#ABEFC6] sm:px-2 `}>
         <p
           className={`text-center ${
-            item === "Active" ? "text-[#067647]" : "text:[#B54708]"
+            item === "Active" ? "text-[#067647]" : "text-[#B54708]"
           }
           text-[#067647] text-[10px] sm:text-[12px] font-sans`}>
           {item}
